@@ -1,0 +1,1588 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* <!-- ......................................HEADER....................... --> */
+.header
+{
+    /* background: cornflowerblue; */
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    /* background: coral; */
+    width: 100%;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    /* background: coral; */
+    align-items: center;
+}
+ul{
+    margin-left: 50px;
+}
+.bars-block{
+    display:block ;
+}
+li{   
+    margin-right: 20px;    
+    list-style: none;      
+    display: inline;  
+}       
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: 'Joti One';
+}
+.bars{
+    display: none;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20%;
+    /* background: maroon; */
+    align-items: center;
+    height: 80px;
+}
+.logo img{
+    height: 30px;
+    width:150px;
+}
+.menu-icon {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: right;
+   width: 40%;
+   /* background: navy; */
+   align-items: center;
+   height: 80px;
+}
+.menu-icon i{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.menu{
+    position: relative;
+    z-index: 1;
+}
+.main{
+    height: auto;
+    width:40ch;
+    background:#fff;
+    position: absolute;
+    top:100px;
+    left: 00px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: .55s;
+    visibility: hidden;
+}
+.x {
+    width:160px;
+    /* border: 2px solid; */
+}
+.x li{
+    position: relative;
+}
+.menu:hover .main{
+    visibility: visible;
+    margin-top: -50px;
+}
+.more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0px 30px 0px;
+}
+.more li{
+    margin-top: 20px;
+}
+.more li a{
+    color: #545454;
+    transition: .5s;
+    font-size: 15px;
+}
+.more li:hover a{
+    color: #000;
+}
+.x li::after{
+    content: '';
+    height: 2px;
+    width: 55px;
+    background: #000;
+    position: absolute;
+    top:25px;
+    left: 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.x li:hover::after{
+    opacity: 1;
+}
+
+/* ...............1th navbar end.................. */
+
+/* ..........2nd navbar.............................. */
+.main1{
+    height: auto;
+    width:100ch;
+    background: #fff;
+    position: absolute;
+    top:100px;
+    left: 00px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: .55s;
+    visibility: hidden;
+}
+.x1{
+    width:200px;
+    /* border: 2px solid; */
+}
+.x1 li{
+    position: relative;
+}
+.menu:hover .main1{
+    visibility: visible;
+    margin-top: -50px;
+}
+.more1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:30px 0px 30px 0px;
+    /* border: 2px solid; */
+}
+.more1 li{
+    margin-top: 20px;
+}
+.more1 li a{
+    color: #545454;
+    transition: .5s;
+    font-size: 15px;
+}
+.more1 h1{
+    font-size: 22px;
+}
+.more1 li:hover a{
+    color: #000;
+}
+.x1 li::after{
+    content: '';
+    height: 2px;
+    width: 55px;
+    background: #000;
+    position: absolute;
+    top:25px;
+    left: 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.x1 li:hover::after{
+    opacity: 1;
+}
+/* ...............2th navbar end.................. */
+/* .....................................3rd navbar.................. */
+.main2{
+    height: auto;
+    width:170ch;
+    background:#fff;
+    position: absolute;
+    top:100px;
+    left: -200px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: .55s;
+    visibility: hidden;
+}
+.x2{
+    width:260px;
+    /* border: 2px solid; */
+    position: relative;
+    overflow: hidden;
+}
+.x2 li{
+    position: relative;
+}
+.menu:hover .main2{
+    visibility: visible;
+    margin-top: -50px;
+}
+.more2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:30px 0px 30px 0px;
+    /* border: 2px solid; */
+}
+.more2 li{
+    margin-top: 20px;
+}
+.more2 li a{
+    color: #545454;
+    transition: .5s;
+    font-size: 15px;
+}
+.more2 h1{
+    font-size: 22px;
+}
+.more2 li:hover a{
+    color: #000;
+}
+.x2 li::after{
+    content: '';
+    height: 2px;
+    width: 90px;
+    background: #000;
+    position: absolute;
+    top:25px;
+    left: 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.x2 li:hover::after{
+    opacity: 1;
+}
+.shop-photos {
+    height: 280px;
+    width: 250px;
+    background: url(/images/eco-cleaning-products-concept_23-2148781955.avif) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 40px;
+    transition: 1s;
+    z-index: -1;
+}
+.shop-photos:hover {
+    background-size: 110% 110%;
+}
+.shop-photos::before{
+    content: '';
+    height: 280px;
+    width: 250px;
+    position: absolute;
+    top: 0%;
+    left: -96%;
+    transition: 1s;
+    margin-top: 40px;
+    z-index: 1;
+}
+.shop-photos:hover::before{
+    transform: translate(100%,00%);
+    background: rgba(0, 0, 0, .3);
+}
+.img-text{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    z-index: 1;
+}
+.img-text h2{
+    color: #212529;
+    font-size: 17px;
+    line-height: 1.8rem;
+    letter-spacing: 3px;
+}
+.img-text h4{
+    color: #000;
+    font-size: 40px;
+}
+.btn{
+    padding: 16px 15px; 
+    font-size:18px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: .41s ease-in-out;
+}
+.btn:hover{
+    background: #000;
+    color: #fff;
+}
+/* ...............3th navbar end.................. */
+
+/* ................................4th navabar.................... */
+
+.main3{
+    height: auto;
+    width:25ch;
+    background:#fff;
+    position: absolute;
+    top:100px;
+    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: .55s;
+    visibility: hidden;
+}
+.x3{
+    width:190px;
+    /* border: 2px solid; */
+    position: relative;
+    overflow: hidden;
+}
+.x3 li{
+    position: relative;
+}
+.menu:hover .main3{
+    visibility: visible;
+    margin-top: -50px;
+}
+.more3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:30px 0px 30px 0px;
+    /* border: 2px solid; */
+}
+.more3 li{
+    margin-top: 20px;
+}
+.more3 li a{
+    color: #545454;
+    transition: .5s;
+    font-size: 15px;
+}
+.x3 li::after{
+    content: '';
+    height: 2px;
+    width: 70px;
+    background: #000;
+    position: absolute;
+    top:25px;
+    left: 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.x3 li:hover::after{
+    opacity: 1;
+}
+/* ...............4th navbar end.................. */
+
+/* ................................5th navabar.................... */
+.main4{
+    height: auto;
+    width:20ch;
+    background:#fff;
+    position: absolute;
+    top:100px;
+    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: .55s;
+    visibility: hidden;
+}
+.x4{
+    width:260px;
+    /* border: 2px solid; */
+    position: relative;
+    overflow: hidden;
+}
+.x4 li{
+    position: relative;
+}
+.menu:hover .main4{
+    visibility: visible;
+    margin-top: -50px;
+}
+.more4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:30px 0px 30px 0px;
+    /* border: 2px solid; */
+}
+.more4 li{
+    margin-top: 20px;
+}
+.more4 li a{
+    color: #545454;
+    transition: .5s;
+    font-size: 15px;
+}
+.more4 h1{
+    font-size: 22px;
+}
+.more4 li:hover a{
+    color: #000;
+}
+.x4 li::after{
+    content: '';
+    height: 2px;
+    width: 50px;
+    background: #000;
+    position: absolute;
+    top:25px;
+    left: 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.x4 li:hover::after{
+    opacity: 1;
+}
+/* ...............5th navbar end.................. */
+/* .......................Header End....................... */
+
+/* .......................Contain....................... */
+.contain{
+    position: relative;
+}
+.con-img img{
+    width: 100%;
+}
+.con-text{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-30%,-50%);
+    
+}
+.con-text h4{
+    color: #545454;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    line-height: 5rem;
+    font-family: "Sofia", sans-serif;
+}
+.con-text h1{
+    color:#054;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    font-family: 'Syncopate';
+}
+.con-text p{
+    color: #545454; 
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+    padding-top: 20px;
+    font-family: "Sofia", sans-serif;
+}
+.btn1{
+    padding: 14px 40px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    transition: 1s;
+    cursor: pointer;
+}
+.btn1:hover {
+   background: #054;
+}
+/* .......................Contain ENd....................... */
+
+/* .......................Product....................... */
+.product
+{
+    /* height: 800px; */
+    /* background: coral; */
+    text-align: center;
+    padding-top: 50px;
+}
+.product .pro-text h1{
+    color: #054;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    line-height: 5rem;
+}
+.product .pro-text h4{
+    color: #0455;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+}
+.all-pro-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    position: relative;
+}
+.pro-card{
+    height: 400px;
+    width: 300px;
+    background: cornflowerblue;
+    position: relative;   
+}
+.number{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 25px;
+    width: 60px;
+    line-height:25px;
+    background: #054;
+    color: #fff;
+    z-index: 1;
+}
+.card-img img{
+    height: 400px;
+    width: 300px;
+}
+.card-img{
+    position: relative;
+    overflow: hidden;
+}
+.pro-icon{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    right: -15%;
+    opacity: 0;
+    transition: 1s;
+    z-index: 1;
+    transform: translate(-30%,-35%);
+}
+.pro-icon i{
+    margin-top: 15px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    background: #fff; 
+    transition: 1s;
+}
+.card-img:hover .pro-icon { 
+    right: 0;
+    opacity: 1;
+}
+.card-img i:hover {
+    background: #000;
+    color: white;
+}
+.car img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 300px;
+    opacity: 0;
+    transition:1s ease-in-out; 
+}
+.car img:hover
+{
+    opacity: 1;
+}
+.card-text h2
+{
+    color: #212529;
+    font-size:24px;
+}
+.card-text h1
+{
+    color:black;
+    font-size: 18px;
+    line-height: 2rem;
+}
+.card-text i
+{
+    color: #054;
+}
+/* .......................Product End....................... */
+
+/* .......................Slider Card....................... */
+.slider-card
+{
+    /* height: 800px; */
+    /* background: cornflowerblue; */
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+.part-card-1
+{
+    height: 400px;
+    width: 45%;
+    background: chocolate;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.part-card-1::before
+{
+    content: '';
+    height: 400px;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    transition: .22s;
+}
+.part-card-1:hover::before
+{
+    transform: translate(0%,-100%);
+    rotate: 360deg;
+}
+.part-card-1 img
+{
+    height: 400px;
+    width: 100%;
+    transition: 1s;
+}
+.slider-text
+{
+    position: absolute;
+    top:100px;
+    left: 50px;
+    width: 350px;
+}
+.slider-text h5
+{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 2rem;
+}
+.slider-text h1
+{
+    color: #054;
+    font-weight: bold;
+    font-size: 40px;
+}
+.btn3{
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    color: white;
+    background:#000;
+    transition: 1s;
+}
+.btn3:hover
+{
+    background: #054;
+    color:black;
+}
+.part-card-2
+{
+    height: 400px;
+    width: 45%;
+    background: crimson;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.part-card-2::before
+{
+    content: '';
+    height: 400px;
+    width: 100%;
+    background:rgba(255, 255, 255, .3);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    transition: .22s;
+}
+.part-card-2:hover::before
+{
+    transform: translate(0%,-100%);
+    rotate: 360deg;
+}
+.part-card-2 img
+{
+    height: 400px;
+    width: 100%;
+    transition: 1s;
+}
+.slider-text2
+{
+    position: absolute;
+    top:100px;
+    left: 50px;
+    width: 300px;
+}
+.slider-text2 h5
+{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 5rem;
+    width: 400px;
+}
+.slider-text2 p
+{
+    color: #054;
+    font-weight: bold;
+    font-size: 20px;
+}
+.free-icon
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 300px; */
+    /* background: crimson; */
+    margin-top: 100px;
+    text-align: center;
+}
+.icon1
+{
+    width: 25%;
+    /* background: coral; */
+}
+.icon2
+{
+    width: 25%;
+    /* background: maroon; */
+}
+.icon3
+{
+    width: 25%;
+    /* background: magenta; */
+}
+.icon4
+{
+    width: 25%;
+    /* background: coral; */
+}
+.free-icon i
+{
+    font-size: 60px;
+    /* margin-left: 60px; */
+    padding: 10px;
+    color: #054;
+}
+.icon1-text
+{
+    text-align: center;
+}
+.icon1-text h1{
+    color:#000;
+    font-size: 25px;
+    transition: 1s;
+    cursor: pointer;
+}
+.icon1-text p
+{
+    color: #212529;
+    font-size:20px;
+    margin-left: 30px;
+}
+.free-icon  h1:hover
+{
+    color:#054;
+}
+.free-icon i
+{
+    transform: rotate(0);
+    transition: 1s;
+}
+.free-icon i:hover 
+{
+    transform: rotate(360deg);
+    color: gold;
+}
+/* <!-- .............................................Slider END................................ --> */
+
+/* <!-- ...................................As SEEN in................... --> */
+.seen
+{
+    /* height: 400px; */
+    width: 100%;
+    background:#EDF1F0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    position: relative;
+}
+.seen h1
+{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    transform: translate(20% ,30%);
+    font-size: 50px;
+    text-align: center;
+}
+.parker
+{
+    width: 33.33%;
+    /* background: chartreuse; */
+    text-align: center;
+    padding-top: 130px;
+}
+.parker p
+{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.hayden
+{
+    width: 33.33%;
+    /* background: coral; */
+    text-align: center;
+    padding-top: 130px;
+}
+.hayden p
+{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.good-mood
+{
+    width: 33.33%;
+    /* background: maroon; */
+    text-align: center;
+    padding-top: 130px;
+}
+.good-mood p
+{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+/* <!-- ...................................Customer Favorite Beauty Essentials................... --> */
+.product-text
+{
+    text-align: center;
+    padding-top: 80px;
+}
+.product-text h1
+{
+    font-size: 50px;
+    color: #054;
+    line-height: 6rem;
+}
+.product-text p
+{
+    font-size: 20px;
+    color: #545454;
+}
+.big-pic
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* position: relative; */
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 100px;
+}
+.main-pic
+{
+    background: url(/images/img56.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 1000px;
+    width: 40%;
+    /* margin-top: 100px; */
+    transition: 1s;
+    position: relative;
+}
+.main-pic:hover 
+{
+    background-size: 140% 110%;
+}
+.main-pic::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    height: 1000px;
+    width: 100%;
+    /* background: red; */
+    transition: 1s;
+    /* overflow: hidden; */
+}
+.main-pic:hover::before
+
+{
+    background: rgba(0, 0, 0, .3);
+    transform: translate(0%,-100%);
+    rotate: 360deg;
+}
+.big-text
+{
+    position: absolute;
+    bottom: 50px;
+    left:50px;
+    line-height: 2.5rem;
+}
+.big-text h1
+{
+    color: white;
+    font-size: 45px;
+}
+.big-text p
+{
+    color: white;
+    font-size:20px;
+    line-height: 5rem;
+}
+.btn5
+{
+    padding: 15px 26px;
+    border: none;
+    color: #000;
+    font-size: 15px;
+    transition: 1s;
+    background: white;
+}
+.btn5:hover
+{
+    background: red;
+    color: white;
+}
+.all-pro-card1{
+    width: 60%;
+    /* background: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+.pro-card1{
+    /* height: 300px; */
+    width: 300px;   
+    /* background: cornflowerblue; */
+    position: relative;   
+}
+.number1{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    height: 25px;
+    width: 60px;
+    line-height:25px;
+    background: #054;
+    color: #fff;
+    z-index: 1;
+}
+.card-img1 img{
+    height: 400px;
+    width: 300px;
+}
+.card-img1{
+    position: relative;
+    overflow: hidden;
+}
+.pro-icon1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    right: -15%;
+    opacity: 0;
+    transition: 1s;
+    z-index: 1;
+    transform: translate(-30%,-35%);
+}
+.pro-icon1 i{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    background: #fff; 
+    transition: 1s;
+}
+.card-img1:hover .pro-icon1 { 
+    right: 0;
+    opacity: 1;
+}
+.card-img1 i:hover {
+    background: #000;
+    color: white;
+}
+.car1 img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 300px;
+    opacity: 0;
+    transition:1s ease-in-out;
+}
+.car1 img:hover
+{
+    opacity: 1;
+}
+.card-text1
+{
+    text-align: center;
+}
+.card-text1 h2
+{
+    color: #212529;
+    font-size:24px;
+}
+.card-text1 h1
+{
+    color:black;
+    font-size: 18px;
+    line-height: 2rem;
+}
+.card-text1 i
+{
+    color: #054;
+}
+/* <!-- ...................................Customer Favorite Beauty Essentials END................... --> */
+
+/* <!-- ............................................More to Discover............................... --> */
+.dic
+{
+    width: 100%;
+    /* background: gray; */
+    margin-top: 100px;
+    text-align: center;
+}
+.dic h1
+{
+    font-size: 45px;
+    color: #054;
+    line-height: 5rem;
+}
+.dic p
+{
+    font-size: 20px;
+    color: #545454;
+    line-height: 1.8rem;
+}
+.photos-card
+{
+    width: 100%;
+    /* background: coral; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    position: relative;
+}
+.pic-one
+{
+    height: 400px;
+    width: 48%;
+    /* background: cornflowerblue; */
+    overflow: hidden;
+}
+.pic-one img
+{
+    height: 400px;
+    width: 100%;
+    transition: .41s;
+}
+.pic-one:hover img
+{
+    transform: scale(1.3)rotate(8deg);
+}
+.pic-text 
+{
+    position: absolute;
+    top: 105%;
+    left: 15%;
+}
+.pic-text h1
+{
+    color:#0549;
+    letter-spacing: 2px;
+}
+.pic-text a
+{
+    margin-left: 70px;
+    line-height: 2rem;
+    color:chocolate;
+    transition: 1s;
+}
+.pic-text a:hover 
+{
+    color: #054;
+}
+.pic-text i
+{
+    margin-left: 5px;
+    font-size: 15px;
+}
+.pic-two
+{
+    height: 400px;
+    width: 48%;
+    /* background: crimson; */
+    overflow: hidden;
+}
+.pic-two img
+{
+    height: 400px;
+    width: 100%;
+    transition:.41s;
+}
+.pic-two:hover img
+{
+    transform: scale(1.3)rotate(8deg);
+}
+.pic-text1
+{
+    position: absolute;
+    top: 105%;
+    right: 17%;
+}
+.pic-text1 h1
+{
+    color:#0549;
+    letter-spacing: 2px;
+}
+.pic-text1 a
+{
+    margin-left: 50px;
+    line-height: 2rem;
+    color: chocolate;
+    transition: 1s;
+}
+.pic-text1 i
+{
+    margin-left: 5px;
+    font-size: 15px;
+}
+.pic-text1 a:hover 
+{
+    color: #054;
+}
+.new-card
+{
+    /* height: 500px; */
+    /* background: chocolate; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    padding-top: 50px;
+    position: relative;
+}
+.one
+{
+    height: 200PX;
+    width: 18%;
+    background: chocolate;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}   
+.one img
+{
+    height: 200px;
+    width: 100%;
+    transition: 1s;
+}
+.one::before
+{
+    content: '';
+    height: 200px;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    transition: .42s;
+    opacity: 0;
+}
+.one:hover::before 
+{
+    opacity: 1;
+}
+.one i 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    transition: .41s;
+    opacity: 0;
+}
+.one:hover i
+{
+    opacity: 1;
+    color: white;
+}
+.two
+{
+    height:200px;
+    width:18%;
+    background: moccasin;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.two img
+{
+    height: 200px;
+    width: 100%;
+    transition: 1s;
+}
+.two::before
+{
+    content: '';
+    height: 200px;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    transition: .42s;
+    opacity: 0;
+}
+.two:hover::before 
+{
+    opacity: 1;
+}
+.two i 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    transition: .41s;
+    opacity: 0;
+}
+.two:hover i
+{
+    opacity: 1;
+    color: white;
+}
+.three
+{
+    height:200px;
+    width:18%;
+    background: moccasin;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.three img
+{
+    height: 200px;
+    width: 100%;
+    transition: 1s;
+}
+.three::before
+{
+    content: '';
+    height: 200px;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    transition: .42s;
+    opacity: 0;
+}
+.three:hover::before 
+{
+    opacity: 1;
+}
+.three i 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    transition: .41s;
+    opacity: 0;
+}
+.three:hover i
+{
+    opacity: 1;
+    color: white;
+}
+.four
+{
+    height:200px;
+    width:18%;
+    background: moccasin;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.four img
+{
+    height: 200px;
+    width: 100%;
+    transition: 1s;
+}
+.four::before
+{
+    content: '';
+    height: 200px;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    transition: .42s;
+    opacity: 0;
+}
+.four:hover::before 
+{
+    opacity: 1;
+}
+.four i 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    transition: .41s;
+    opacity: 0;
+}
+.four:hover i
+{
+    opacity: 1;
+    color: white;
+}
+.five
+{
+    height:200px;
+    width:18%;
+    background: moccasin;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.five img
+{
+    height: 200px;
+    width: 100%;
+    transition: 1s;
+}
+.five::before
+{
+    content: '';
+    height: 200px;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    transition: .42s;
+    opacity: 0;
+}
+.five:hover::before 
+{
+    opacity: 1;
+}
+.five i 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    transition: .41s;
+    opacity: 0;
+}
+.five:hover i
+{
+    opacity: 1;
+    color: white;
+}
+/* <!-- ............................................More to Discover END............................... -->  */
+
+/* <!-- ............................................FOOTER............................... -->  */
+.footer
+{
+    /* height: 800px; */
+    /* background: cornflowerblue; */
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.company
+{   
+    /* height: 500px; */
+    width: 20%;
+    /* background: coral; */
+    padding-top: 50px;
+}
+.company h1
+{
+    color: #000;
+    font-size: 30px;
+    margin-left: 10px;
+    line-height: 5rem;
+}
+.company p
+{
+    color: #545454;
+    font-size: 15px;
+    margin-left: 10px;
+    line-height: 2rem;
+}
+.useful-links
+{   
+    /* height: 500px; */
+    width: 20%;
+    /* background: darkcyan; */
+    padding-top: 50px;
+}
+.useful-links h1
+{
+    color: #000;
+    font-size: 30px;
+    margin-left: 10px;
+    line-height: 5rem;
+    margin-left: 40px;
+}
+.useful-links .new-pro
+{
+    color: #545454;
+    font-size: 15px;
+    line-height: 2rem;
+}
+.new-pro li
+{
+    display: block;
+}
+.infomation 
+{   
+    /* height: 500px; */
+    width: 20%;
+    /* background: darkgreen; */
+    padding-top: 50px;
+}
+.infomation h1
+{
+    color: #000;
+    font-size: 30px;
+    margin-left: 10px;
+    line-height: 5rem;
+    margin-left: 40px;
+}
+.infomation .start-re
+{
+    color: #545454;
+    font-size: 15px;
+    line-height: 2rem;
+}
+.start-re li
+{
+    display: block;
+}
+.good-email
+{
+    /* height: 500px; */
+    width: 40%;
+    /* background: deepskyblue; */
+    padding-top: 50px;
+}
+.good-email h1
+{
+    color: #000;
+    font-size: 30px;
+    margin-left: 10px;
+    line-height: 5rem;
+    margin-left: 40px;
+}
+.good-email p
+{
+    color:#545454;
+    font-size:15px;
+    margin-left: 10px;
+    line-height: 1.5rem;
+    margin-left: 40px;
+}
+.good-email .em-su
+{
+    padding: 16px 56px;
+    margin-top: 50px;
+    margin-left: 40px;
+    border: none;
+    outline: none ;
+    background: #545454;
+}
+::placeholder
+{
+    color: white;
+}
+.good-email .em-sp
+{
+    padding: 16px 25px;
+    margin-top: 50px;
+    border: none;
+    background: #000;
+    color: white;
+}
+.em-sp:hover
+{
+    background: #054;
+    color: white;
+}
+.last
+{
+    /* height: 200px; */
+    width: 100%;
+    /* background: cadetblue; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.copiride
+{
+    /* height: 100px; */
+    width: 33.33%;
+    /* background: crimson; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.copiride p
+{
+    font-size: 25px;
+    color: #545454;
+}
+.last-icon i
+{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.glo-logo
+{
+    /* height: 100px; */
+    width: 33.33%;
+    /* background: darkgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glo-logo img
+{
+    height: 30px;
+    width: 200px;
+    align-items: center;
+}
+.payment
+{
+    /* height: 100px; */
+    width: 33.33%;
+    /* background: darkgoldenrod; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* <!-- ............................................FOOTER END............................... -->   */

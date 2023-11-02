@@ -1,0 +1,98 @@
+@media only screen and (max-width: 600px)
+{
+    /* .................header............. */
+
+    .header{width:100%;height: 80px;}
+    .nav{width: 20%;justify-content: center;}
+    .bars{display: block; }
+    .bars-block{display: none;}
+    
+     ul{margin-left: 100px;margin-top: 100px; }
+     
+    .logo{width: 40%;}
+    .menu-icon{width: 40%; justify-content: center;}
+    .menu{width: 100%;}
+
+/* .................header END............. */
+    
+    .main{width: 40ch;}
+    .main1{width: 50ch;left: -50px;}
+    .x1{width: 50%;}
+    .main2{width:55ch;left: -180px;}
+    .x2{width: 50%;}
+    
+    .x3{width:100%;}
+    .main3{width: 20ch;left: -40px;}
+    .x4{width:100%;}
+    .main4{width: 20ch;left: -100px;}
+
+
+
+
+    /* ..............Contain............. */
+    .con-text{width: 100%; left: 35%;}
+    .con-img img{width: 100%; height: 100vh;}
+    .con-text h1{font-size: 55px;}
+    .con-text p{font-size: 17px;}
+    
+    .product .pro-text h1{width: 100%;}
+    .pro-card{margin-top: 100px;}
+    .all-pro-card{margin: 0}
+
+    
+    
+    .part-card-1{width: 100%;}
+    .part-card-2{width: 100%;}
+
+
+    .free-icon{width: 100%;}
+    .icon1,.icon2,.icon3,.icon4{width: 100%;}
+  
+
+
+    .seen{width: 100%;}
+    .seen h1{left: 15%;}
+    .parker{width: 100%;}
+    .hayden{width: 100%;}
+    .good-mood{width: 100%;}
+    .parker p, .hayden p , .good-mood p {font-size: 15px;}
+
+    .product-text h1{font-size: 40px; line-height: 3rem;}
+    .product-text p{font-size: 20px; line-height: 2rem;}
+
+  
+    .all-pro-card1{width: 100%;}
+ 
+
+    .big-pic{width: 100%;}
+    .main-pic{width: 100%;}
+    .big-text{   bottom: 50px;left:50px;}
+
+    .dic p{font-size: 20px;}
+    .photos-card{width: 100%;}
+    .pic-one,.pic-two{width: 100%;}
+    .pic-text {top: 50%;text-align: center;}
+    .pic-text a,.pic-text a{margin-left: 0;}
+    .pic-text1{left: 25%;}
+    .pic-text1 i{margin-left: 0}
+    .pic-two img{margin-top: 100px;}
+
+
+    .new-card{width: 100%;}
+    .one,.two,.three,.four,.five{width: 40%; margin-top: 10px;}
+
+
+       
+    .footer{width: 100%;}
+    .company,.useful-links,.infomation,.good-email{width: 100%; text-align: left;}
+    .useful-links h1,.infomation h1, .good-email h1{margin: 20px; line-height: 0;}
+    .good-email p{margin: 20px;}
+    .good-email .em-su{margin-left: 20px}
+    .infomation .start-re,.useful-links .new-pro{margin-left: 20px; }
+
+
+    .last{width: 100%; line-height: 7rem;}
+    .copiride,.glo-logo,.payment{width: 100%; }
+    .glo-logo{justify-content: left; margin-left: 20px;}
+    .payment{justify-content: left; margin-left: 20px;}
+}
